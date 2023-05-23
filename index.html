@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -34,41 +34,53 @@
 
       <div class="spending__details">
         <div class="spending__chart">
+
+                                    
           <h1>Spending - Last 7 days</h1>
           <div class="spending__bars">
             <div class="spending__bar">
-              <div class="bar"></div>
-              <p class="day">mon</p>
+              
+              <div class="bar"><p class="expenses"></p></div>
+              <p class="day" data-day="mon" data-num="">mon</p>
             </div>
             <div class="spending__bar">
-              <div class="bar"></div>
-              <p class="day">tue</p>
+            
+              
+              <div class="bar"><p class="expenses"></p></div>
+              <p class="day"  data-day="tue" data-num="">tue</p>
             </div>
             <div class="spending__bar">
-              <div class="bar"></div>
-              <p class="day">wed</p>
+              
+              <div class="bar"><p class="expenses"></p></div>
+              <p class="day"  data-day="wed" data-num="">wed</p>
             </div>
             <div class="spending__bar">
-              <div class="bar"></div>
-              <p class="day">thu</p>
+              
+              <div class="bar"><p class="expenses"></p></div>
+              <p class="day"  data-day="thu" data-num="">thu</p>
             </div>
             <div class="spending__bar">
-              <div class="bar"></div>
-              <p class="day">fri</p>
+              
+              <div class="bar"><p class="expenses"></p></div>
+              <p class="day"  data-day="fri" data-num="">fri</p>
             </div>
             <div class="spending__bar">
-              <div class="bar"></div>
-              <p class="day">sat</p>
+              
+              <div class="bar"><p class="expenses"></p></div>
+              <p class="day"  data-day="sat" data-num="">sat</p>
             </div>
             <div class="spending__bar">
-              <div class="bar"></div>
-              <p class="day">sun</p>
+              
+              <div class="bar"><p class="expenses"></p></div>
+              <p class="day"  data-day="sun" data-num="">sun</p>
             </div>
           </div>
+
+        </div> 
           <div class="spending__total">
             <h2>Total this month</h2>
             <div class="spending__total-details">
-              <p class="total">$478.33</p>
+              <span class="total">$478.33</span>
               <p><span>+2.4%</span> from last month</p>
             </div>
           </div>
@@ -85,6 +97,67 @@
       - **Bonus**: See dynamically generated bars based on the data provided in the local JSON file 
     -->
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
+
+
+<!-- <div class="container">
+  <div class="balance">
+    <div class="balance__data">
+      <p>My balance <span>$921.48</span></p>
+    </div>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo" />
+    </div>
+  </div>
+
+  <div class="spending__details">                             
+      <h1>Spending - Last 7 days</h1>
+      <div class="spending__bars">
+        <div class="spending__bar">
+          
+          <div class="bar"><p class="expenses"></p></div>
+          <p class="day" data-day="mon" data-num="">mon</p>
+        </div>
+        <div class="spending__bar">
+          
+          <div class="bar"><p class="expenses"></p></div>
+          <p class="day"  data-day="tue" data-num="">tue</p>
+        </div>
+        <div class="spending__bar">
+          
+          <div class="bar"><p class="expenses"></p></div>
+          <p class="day"  data-day="wed" data-num="">wed</p>
+        </div>
+        <div class="spending__bar">
+          
+          <div class="bar"><p class="expenses"></p></div>
+          <p class="day"  data-day="thu" data-num="">thu</p>
+        </div>
+        <div class="spending__bar">
+          
+          <div class="bar"><p class="expenses"></p></div>
+          <p class="day"  data-day="fri" data-num="">fri</p>
+        </div>
+        <div class="spending__bar">
+          
+          <div class="bar"><p class="expenses"></p></div>
+          <p class="day"  data-day="sat" data-num="">sat</p>
+        </div>
+        <div class="spending__bar">
+          
+          <div class="bar"><p class="expenses"></p></div>
+          <p class="day"  data-day="sun" data-num="">sun</p>
+        </div>
+      </div>
+    </div>
+    <div class="spending__total">
+      <h2>Total this month</h2>
+      <div class="spending__total-details">
+        <span class="total">$478.33</span>
+        <p><span>+2.4%</span> from last month</p>
+      </div>
+    </div>
+  </div>
+</div> -->
