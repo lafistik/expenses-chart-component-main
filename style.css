@@ -99,6 +99,7 @@ h1 {
 .spending__bar {
   flex: 1 0 11.7%;
   text-align: center;
+  position: relative;
 }
 
 .bar {
@@ -109,7 +110,6 @@ h1 {
   cursor: pointer;
   transition: 0.3s ease-in;
 
-  position: relative;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
@@ -156,7 +156,6 @@ h2 {
 }
 
 .spending__total-details {
-  margin-top: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,7 +218,6 @@ h2 {
 
   .spending__total {
     font-size: 1.125rem;
-    padding-top: 2rem;
   }
 
   h2 {

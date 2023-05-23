@@ -19,9 +19,8 @@ bars.forEach((bar) => {
 bars.forEach((bar) => {
   bar.addEventListener("mouseover", function () {
     const amount = "$" + this.parentElement.querySelector(".day").dataset.num;
-    this.querySelector(".expenses").style.padding = "6px";
-    this.querySelector(".expenses").style.opacity = "1";
-    this.querySelector(".expenses").textContent = amount;
+    this.parentElement.querySelector(".expenses").style.padding = "6px";
+    this.parentElement.querySelector(".expenses").textContent = amount;
   });
 });
 
@@ -29,8 +28,8 @@ bars.forEach((bar) => {
 
 bars.forEach((bar) => {
   bar.addEventListener("mouseout", function () {
-    this.querySelector(".expenses").style.padding = "0px";
-    this.querySelector(".expenses").textContent = "";
+    this.parentElement.querySelector(".expenses").style.padding = "0px";
+    this.parentElement.querySelector(".expenses").textContent = "";
   });
 });
 
