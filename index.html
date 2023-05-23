@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="balance">
+        <div class="balance__data">
+          <p>My balance <span>$921.48</span></p>
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+      </div>
 
-  My balance
-  $921.48
+      <div class="spending__details">
+        <div class="spending__chart">
+          <h1>Spending - Last 7 days</h1>
+          <div class="spending__bars">
+            <div class="spending__bar">
+              <div class="bar"></div>
+              <p class="day">mon</p>
+            </div>
+            <div class="spending__bar">
+              <div class="bar"></div>
+              <p class="day">tue</p>
+            </div>
+            <div class="spending__bar">
+              <div class="bar"></div>
+              <p class="day">wed</p>
+            </div>
+            <div class="spending__bar">
+              <div class="bar"></div>
+              <p class="day">thu</p>
+            </div>
+            <div class="spending__bar">
+              <div class="bar"></div>
+              <p class="day">fri</p>
+            </div>
+            <div class="spending__bar">
+              <div class="bar"></div>
+              <p class="day">sat</p>
+            </div>
+            <div class="spending__bar">
+              <div class="bar"></div>
+              <p class="day">sun</p>
+            </div>
+          </div>
+          <div class="spending__total">
+            <h2>Total this month</h2>
+            <div class="spending__total-details">
+              <p class="total">$478.33</p>
+              <p><span>+2.4%</span> from last month</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+      Your users should be able to:
 
-  Spending - Last 7 days
+      - View the bar chart and hover over the individual bars to see the correct amounts for each day
+      - See the current day's bar highlighted in a different colour to the other bars
+      - View the optimal layout for the content depending on their device's screen size
+      - See hover states for all interactive elements on the page
+      - **Bonus**: See dynamically generated bars based on the data provided in the local JSON file 
+    -->
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
