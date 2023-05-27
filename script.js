@@ -40,7 +40,7 @@ assignNum();
 function assignNum() {
   data.forEach((date, i) => {
     barDays[i].dataset.num = date.amount;
-    console.log(barDays[i].dataset.num);
+    alert(barDays[i].dataset.num);
   });
 }
 
