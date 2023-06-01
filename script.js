@@ -8,8 +8,6 @@ const barDays = document.querySelectorAll(".day");
 
 // CHANGE BAR COLOR ON CLICK by adding active class
 
-alert(data[0].day + " AND " + data[0].amount);
-
 bars.forEach((bar) => {
   bar.addEventListener("click", function () {
     bars.forEach((bar) => {
