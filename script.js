@@ -1,4 +1,7 @@
-import data from "./data.json" assert { type: "json" };
+// import data from "./data.json" assert { type: "json" };
+
+const resp = await fetch("./data.json");
+const data = await resp.json();
 
 const bars = document.querySelectorAll(".bar");
 const barDays = document.querySelectorAll(".day");
